@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gimnasio GEF Alto Rendimiento · Gimnasio en El Puig de Santa Maria</title>
+    <meta
+      name="description"
+      content="Gimnasio de fuerza y musculación en El Puig de Santa Maria (Valencia): peso libre, máquinas y trato cercano. C. Blasco Ibáñez, 2 · 695 80 34 50."
+    />
+    <!--
+      DEMO: noindex para que esta propuesta no compita en buscadores con la ficha real del gimnasio.
+      Quitar esta línea solo cuando la web se publique como oficial en su dominio.
+    -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / redes. Al publicar en un dominio, usar URL absoluta en og:image y añadir og:url + canonical. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Gimnasio GEF Alto Rendimiento" />
+    <meta property="og:title" content="Gimnasio GEF Alto Rendimiento · El Puig de Santa Maria" />
+    <meta
+      property="og:description"
+      content="Fuerza sin franquicia. Peso libre, máquinas y trato cercano en El Puig de Santa Maria."
+    />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sala de fuerza con racks y barra cargada (imagen provisional)" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Imagen del hero: precarga para mejorar el LCP -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/images/provisional/hero-racks-800.webp"
+      imagesrcset="/images/provisional/hero-racks-800.webp 800w, /images/provisional/hero-racks-1600.webp 1600w, /images/provisional/hero-racks-2200.webp 2200w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <!-- Datos estructurados: solo información verificada en fuentes públicas (oct. 2026) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ExerciseGym",
+        "name": "Gimnasio GEF Alto Rendimiento",
+        "telephone": "+34695803450",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "C. Blasco Ibáñez, 2",
+          "postalCode": "46540",
+          "addressLocality": "El Puig de Santa Maria",
+          "addressRegion": "Valencia",
+          "addressCountry": "ES"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 39.5890782, "longitude": -0.3067827 },
+        "hasMap": "https://maps.google.com/?cid=1574901698411857197",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "22:00"
+          },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+        ],
+        "sameAs": ["https://www.instagram.com/gefgimnasio/"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding:1rem;font-family:sans-serif;color:#eeebe5;background:#0b0b0c">
+        Gimnasio GEF Alto Rendimiento · C. Blasco Ibáñez, 2, 46540 El Puig de Santa Maria (Valencia) · Tel. 695 80 34 50
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
